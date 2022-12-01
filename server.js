@@ -16,8 +16,8 @@ app.get("/", (req, res) => {
 });
 
 // // CONTROLLERS
-// const moviesController = require("./controllers/movies_controller"); //* controller crashing when ran
-// app.use("/movies", moviesController);
+const moviesController = require("./controllers/movies_controller"); //* controller crashing when ran
+app.use("/movies", moviesController);
 
 // LISTEN
 app.listen(process.env.PORT, () => {
