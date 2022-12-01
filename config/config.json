@@ -1,23 +1,23 @@
 {
-    "development": {
-      "username": "postgres",
-      "password": "Hollywood1213",
-      "database": "PMSA",
-      "host": "127.0.0.1",
-      "dialect": "postgres"
-    },
-    "test": {
-      "username": "postgres",
-      "password": "Hollywood1213",
-      "database": "PMSA",
-      "host": "127.0.0.1",
-      "dialect": "postgres"
-    },
-    "production": {
-      "username": "postgres",
-      "password": "Hollywood1213",
-      "database": "PMSA",
-      "host": "127.0.0.1",
-      "dialect": "postgres"
-    }
+  "development": {
+    "username": "postgres",
+    "password": "Hollywood1213",
+    "database": "PMSA",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "Hollywood1213",
+    "database": "PMSA",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "Hollywood1213",
+    "database": "PMSA",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
   }
+}
