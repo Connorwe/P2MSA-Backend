@@ -1,36 +1,39 @@
-"use strict";
-const { Model } = require("sequelize");
-module.exports = (sequelize, DataTypes) => {
-  class Movies extends Model {
-    static associate({}) {}
-  }
-  Movies.init(
-    {
-      movie_id: {
-        type: DataTypes.INTEGER,
-        primaryKey: true,
-        autoIncrement: true,
-      },
-      name: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      genre: {
-        type: DataTypes.TEXT,
-        allowNull: false,
-      },
-      rating: {
-        type: DataTypes.DATE,
-        allowNull: false,
-      },
-    },
-    {
-      sequelize,
-      modelName: "Movies",
-      tableName: "movies",
-      timestamps: false,
-    }
-  );
+const { Sequelize, DataTypes, Model } = require("sequelize");
 
-  return Movies;
-};
+// MODEL
+class Movie extends Model {}
+
+Movie.init(
+  {
+    movie_id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    genre: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    rated: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+    length: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+  },
+  {
+    sequelize,
+    modelName: "Movie",
+    tableName: "movies",
+    timestamps: false,
+  }
+);
+
+// EXPORT
+module.exports = Movie;
