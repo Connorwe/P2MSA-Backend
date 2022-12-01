@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Connorwe/P2MSA#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "sequelize": "^6.26.0"
   }
 }
