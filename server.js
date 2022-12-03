@@ -15,9 +15,12 @@ app.get("/", (req, res) => {
   });
 });
 
-// // CONTROLLERS
-const moviesController = require("./controllers/movies_controller"); //* controller crashing when ran
+// CONTROLLERS
+const moviesController = require("./controllers/movies_controller");
 app.use("/movies", moviesController);
+
+const tvshowsController = require("./controllers/tvshows_controller");
+app.use("/tvshows", tvshowsController);
 
 // LISTEN
 app.listen(process.env.PORT, () => {
