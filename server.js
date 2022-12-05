@@ -2,8 +2,10 @@
 const express = require("express");
 const app = express();
 const { Sequelize } = require("sequelize");
+const cors = require("cors");
 
 // CONFIGURATION / MIDDLEWARE
+app.use(cors());
 require("dotenv").config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -24,7 +26,7 @@ app.use("/tvshows", tvshowsController);
 
 // LISTEN
 app.listen(process.env.PORT, () => {
-  console.log(`🎸 Rockin' on port: ${process.env.PORT}`);
+  console.log(`🎸 Rockin' on port: ${process.env.PORT}`); //TODO need to connect to frontend
 });
 
 // // DEPENDENCIES
