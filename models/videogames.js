@@ -1,7 +1,7 @@
 "use strict";
 const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
-  class Tvshows extends Model {
+  class Videogames extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -11,12 +11,12 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  Tvshows.init(
+  Videogames.init(
     {
-      tvshows_id: {
+      game_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
-        autoIncrement: true,
+        allowNull: false,
       },
       name: {
         type: DataTypes.STRING,
@@ -30,21 +30,13 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
-      episodes: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-      },
-      length: {
-        type: DataTypes.TIME,
-        allowNull: false,
-      },
     },
     {
       sequelize,
-      modelName: "Tvshows",
-      tableName: "tvshows",
+      modelName: "Videogames",
+      tableName: "videogames",
       timestamps: false,
     }
   );
-  return Tvshows;
+  return Videogames;
 };
