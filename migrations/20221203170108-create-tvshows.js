@@ -2,8 +2,8 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable("movies", {
-      movie_id: {
+    await queryInterface.createTable("tvshows", {
+      tvshows_id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
@@ -17,8 +17,8 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false,
       },
-      rating: {
-        type: Sequelize.STRING,
+      episodes: {
+        type: Sequelize.INTEGER,
         allowNull: false,
       },
       length: {
@@ -28,6 +28,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("movies");
+    await queryInterface.dropTable("tvshows");
   },
 };
