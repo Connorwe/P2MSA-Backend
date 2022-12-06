@@ -17,10 +17,6 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false,
       },
-      rating: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-      },
       episodes: {
         type: Sequelize.INTEGER,
         allowNull: false,
