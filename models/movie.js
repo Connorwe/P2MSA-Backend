@@ -27,7 +27,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
       },
       rating: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
       },
       length: {
@@ -38,7 +38,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       sequelize,
       modelName: "Movie",
-      tableName: "movies",
+      tableName: "movie",
       timestamps: false,
     }
   );
