@@ -9,6 +9,14 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
+      content: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      stars: {
+        type: Sequelize.FLOAT,
+        allowNull: true,
+      },
       movie_id: {
         type: Sequelize.INTEGER,
         allowNull: true,
