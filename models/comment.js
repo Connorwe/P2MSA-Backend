@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
       },
       content: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       stars: {
