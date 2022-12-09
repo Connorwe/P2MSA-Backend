@@ -1,5 +1,14 @@
 Template for README
 
+To RUN SEEDERS: Running the seeders
+Again, similar to migrations, these seeder files are just files. They do not affect the database on its own, you must run the seeders first. To do so, use the following command:
+• sequelize db:seed:all
+That command will run all seeders. If you only want it to run one particular file, you have to specify the file --seed with the following command instead:
+• sequelize db:seed --seed seeder-file-name.js
+If using the latter command, be sure you include the entire file name, including the long string of numbers.
+Once the seed successfully runs, check out your database in psql or pgAdmin to make sure all the new data was inserted into your tables.
+
+
 What to Include in your README
 
 1. Project's Title
