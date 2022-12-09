@@ -10,7 +10,7 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       content: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       stars: {
