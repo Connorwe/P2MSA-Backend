@@ -3,7 +3,7 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable("videogames", {
-      game_id: {
+      videogame_id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
@@ -18,7 +18,7 @@ module.exports = {
         allowNull: false,
       },
       rating: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
       },
     });

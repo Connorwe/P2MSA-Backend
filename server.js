@@ -24,6 +24,9 @@ app.use("/movies", moviesController);
 const tvshowsController = require("./controllers/tvshows_controller");
 app.use("/tvshows", tvshowsController);
 
+const videogamesController = require("./controllers/videogames_controller");
+app.use("/videogames", videogamesController);
+
 // LISTEN
 app.listen(process.env.PORT, () => {
   console.log(`🎸 Rockin' on port: ${process.env.PORT}`); //TODO need to connect to frontend
