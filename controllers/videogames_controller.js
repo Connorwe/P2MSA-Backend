@@ -24,9 +24,11 @@ videogames.get('/:videogame_id', async (req, res) => {
       const videogame = await Videogames.findOne({
           where: { videogame_id: videogame_id },
           include: {
-              association: 'comments'
+            model: Comment,
+            as: 'comments'
           }
       })
+      console.log(videogame)
       if (!videogame) {
           res.status(404).json({ message: `Could not find videogame with id "${videogame_id}"` })
       } else {
