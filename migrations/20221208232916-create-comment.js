@@ -21,7 +21,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: true,
       },
-      tvshow_id: {
+      tvshows_id: {
         type: Sequelize.INTEGER,
         allowNull: true,
       },

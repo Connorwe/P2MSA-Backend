@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Videogames.init(
     {
-      game_id: {
+      videogame_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         allowNull: false,
