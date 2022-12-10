@@ -29,7 +29,7 @@ app.use("/videogames", videogamesController);
 
 // LISTEN
 app.listen(process.env.PORT, () => {
-  console.log(`🎸 Rockin' on port: ${process.env.PORT}`); //TODO need to connect to frontend
+  console.log(`🎸 Rockin' on port: ${process.env.PORT}`);
 });
 
 // // DEPENDENCIES
